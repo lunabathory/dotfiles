@@ -1,0 +1,101 @@
+@import '/home/naduah/.cache/wal/colors.scss';
+
+@font-face{
+	font-family: loveland;
+	src: url('Shorelines Script Bold.otf');
+}
+
+body, html{
+	margin: 0px;
+	padding: 0px;
+	background-color: #261f19;
+	color: #fffcf0;
+	font-family: Paper Daisy Demo; 
+}
+.Container {
+    height: 90%;
+    min-height: 300px;
+    width: auto;    
+    margin: auto;
+}
+
+#topword{
+	 width: 75%;
+	 margin: 0 auto;
+	 /*background-color: yellow;*/
+	 /*just a test to see the the div around "hello" is*/
+}
+
+#words{
+	font-family: Loveland;
+	font-size: 6vw;
+	padding-bottom: 0%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+.shorts{
+	float: left;
+	text-align: center;
+	width: 20%;
+}
+
+#tdp {
+	background-color:  #886677;
+}
+
+#learn{
+	background-color: #88aaaa;
+}
+
+#ent{
+	background-color: #bb99aa;
+}
+
+#proj{
+	background-color: #557777;
+}
+
+#util{
+	background-color: #aa8888;
+}
+
+
+h3{
+	font-size: 4vw;
+    line-height: 0em;
+}
+
+ul{
+	padding: 0;
+	padding-bottom: 2%;
+}
+
+li{
+	list-style: none;
+	line-height: 1em;
+	font-size: 3.5vw;
+}
+
+a{
+	color: #fffcf0;
+	text-decoration: none;
+}
+
+a:hover{
+	font-size: 4vw;
+}
+
+#topword:hover{
+	animation: colorshift 3s ease-in infinite;
+}
+
+@keyframes colorshift{
+	0% {color: #fffcf0;}
+	20% {color: #886677;}
+	40% {color: #88aaaa;}
+	60% {color: #bb99aa;}}
+	80%{color: #557777;}
+	100% {color: #aa8888;}
+}
