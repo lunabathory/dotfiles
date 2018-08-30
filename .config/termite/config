@@ -1,0 +1,55 @@
+[options]
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+font = Borgen Bold 13
+scrollback_lines = 10000
+search_wrap = true
+icon_name = utilities-terminal
+geometry = 950x460
+clickable_url = true
+cursor_blink = system
+cursor_shape = block
+browser = exo-open
+filter_unmatched_urls = true
+
+# *************************
+[colors]
+background = #c7b8b4
+foreground = #442233
+foreground_bold = #557777
+
+# Black, Gray, Silver, White
+color0 = #000000
+color7 = #556678
+color8 = #556678
+color15 = #556678
+
+# Red
+color1 = #553333
+color9 = #553333
+
+# Green
+color2 = #224444
+color10 = #224444
+
+# Yellow
+color3 = #ffeedd
+color11 = #ffeedd
+
+# Pink
+color4 = #704E4E
+color12 = #704E4E
+
+# Magenta
+color5 = #886677
+color13 = #886677
+
+# Teal
+color6 = #bbdddd
+color14 = #bbdddd

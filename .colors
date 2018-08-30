@@ -1,0 +1,18 @@
+Main Accent: 442233 #dark purple (old color: 882233)
+Dark Accent: 224444 #dark blue (old color: 442244)
+Dark Text: 557777 #slate blue (old color: 223355)
+Complement: 886677 #spicy pink (old color: 2244aa)
+Complement 2: bbdddd #bright blue (old color: 445533)
+Highlight: 776655 #tan (old color: cc7722)
+Light Highlight: ffeedd #light tan (old color: 998866)
+Light Blue: 88aaaa #light blue (old color: 668822)
+background: aa8888 #pinkish tan
+
+Files that need to be changed:
+Polybar Master
+Polybar Modules
+Tint2 backgrounds
+WM theme (flat-gradient) themerc
+GTK theme config
+Start Page
+Termite

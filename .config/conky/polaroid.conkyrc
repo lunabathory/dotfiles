@@ -1,0 +1,38 @@
+conky.config = {
+	alignment = 'bottom_left',
+	background = true,
+	color2 = 'cccccc',
+	cpu_avg_samples = 2,
+	default_color = '856A61',
+	double_buffer = true,
+	font = 'KG Flavor and Frames Three:size=90',
+	draw_shades = false,
+	gap_x = 50,
+	gap_y = -1000,
+	minimum_width = 150,
+	no_buffers = true,
+	own_window = true,
+	own_window_class = "Conky",
+	own_window_type = 'desktop',
+	own_window_transparent = true,
+	update_interval = 2.0,
+	use_xft = true,
+}
+conky.text = [[
+m
+${goto 50}${voffset -125}${offset -7}${color2}${font Paper Daisy DEMO:size=20}ram$color
+
+${voffset -100}${offset 27}${font Moon Flower:weight=bold:size=24}${memperc}%$font
+
+${goto 104}${voffset -304}${offset -7}${color2}${font Paper Daisy DEMO:size=20}c$color
+${goto 104}${voffset -28}${offset 0}${color2}${font Paper Daisy DEMO:size=20}p$color
+${goto 104}${voffset -26}${offset 7}${color2}${font Paper Daisy DEMO:size=20}u$color
+
+${voffset -100}${offset 110}${font Moon Flower:weight=bold:size=24}${cpu}%$font
+
+${goto 210}${voffset -298}${offset -7}${color2}${font Paper Daisy DEMO:size=20}te$color
+${goto 210}${voffset -31}${offset 2}${color2}${font Paper Daisy DEMO:size=20}mp$color
+
+${voffset -100}${offset 188}${font Moon Flower:weight=bold:size=24}${execi 8 sensors | grep -A 1 'Core 1' | cut -c 17-18 | sed '/^$/d'}°$font
+
+]];

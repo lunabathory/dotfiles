@@ -1,0 +1,28 @@
+;=====================================================
+;     File Includes
+;=====================================================
+
+[section/base]
+include-file = $HOME/.config/polybar/master2.conf
+include-file = $HOME/.config/polybar/modules2.conf
+
+
+;=====================================================
+;     Openbox Bars
+;=====================================================
+
+[bar/notthis-bar]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor = 
+monitor-fallback = 
+
+;tray-position = center
+;tray-padding =
+;tray-transparent = true
+;tray-background = #0063ff
+
+modules-left   = workspaces arrow
+modules-center = spotify test
+modules-right  = arrow4 battery arrow3 volume-bar arrowright clock power

@@ -1,0 +1,40 @@
+conky.config = {
+	alignment = 'top_right',
+	background = true,
+	color2 = 'cccccc',
+	cpu_avg_samples = 2,
+	default_color = '856A61',
+	double_buffer = true,
+	font = 'Paper Daisy DEMO:weight=bold:size=19',
+	draw_shades = false,
+	gap_x = 25,
+	gap_y = 150,
+	minimum_width = 400,
+	no_buffers = true,
+	own_window = true,
+	own_window_class = "Conky",
+	own_window_type = 'desktop',
+	own_window_transparent = true,
+	update_interval = 2.0,
+	use_xft = true,
+}
+conky.text = [[
+${font Shorelines Script Bold:size=20}${time [%A  %d  %B]}$font
+${alignc}${offset 20}${voffset -5}${font MoonFlower:weight=bold:size=22}${time %I:%M %p}$font
+
+${offset }${font Dingytwo:size=24}B$font${offset 5}${voffset -9}${font Paper Daisy DEMO:weight=bold:size=24}${execi 300 /home/naduah/.config/conky/weather.sh "EUR|SE|GM003|MALMO"}$font
+${offset 25}${execi 300 /home/naduah/.config/conky/weathercondition.sh "EUR|SE|GM003|MALMO"}
+
+${offset 110}${voffset -95}${font Dingytwo:size=24}a$font${offset 5}${voffset -9}${font Paper Daisy DEMO:weight=bold:size=24}${execpi 5 python /home/naduah/.config/conky/gmail.py}$font
+${offset 100}new messages
+
+${offset 205}${voffset -95}${font Dingytwo:size=24}D$font${offset 5}${voffset -9}${font Paper Daisy DEMO:weight=bold:size=24}${exec /home/naduah/.config/ToDo.sh}$font
+${offset 212}to do
+
+${offset 300}${voffset -95}${font Dingytwo:size=24}U$font${offset 5}${voffset -9}${font Paper Daisy DEMO:weight=bold:size=24}${exec acpi | cut -c 31}$font
+${offset 280}hours remaining
+
+
+]];
+
+
